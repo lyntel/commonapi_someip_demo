@@ -17,7 +17,7 @@ int main() {
         std::string domain = "local";
         std::string instance = "test"; //depl service define compare 
         std::string connection = "APP2";  //application_name 
-    runtime->registerService("local", "test", myService,connection);
+    runtime->registerService(domain, instance, myService,connection);
     std::cout << "Successfully Registered Service!" << std::endl;
     
     // COMMONAPI_INFO("***TEST COMMONAPI LOG INFO ****** \'");
